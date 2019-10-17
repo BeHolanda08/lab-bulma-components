@@ -1,12 +1,10 @@
 import React from 'react';
 
-const CoolButton = () => {
+const CoolButton = ({ b1, b2 }) => {
     return (
         <div>
-            <form action="/Signup" method="get">
-                <button class="button is-rounded my-class is-danger is-small">Login</button>
-                <button class="button is-small is-success">Signup</button>
-            </form>
+            <button class="button is-rounded my-class is-danger is-small">{b1}</button>
+            <button class="button is-small is-success">{b2}</button>
         </div>
     )
 }
